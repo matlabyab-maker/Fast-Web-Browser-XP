@@ -1,0 +1,8 @@
+Fast Browser XP — Social Links + Video Link Detector
+====================================================
+Added SOCIAL menu with Iranian and international messaging/social web services.
+Added VIDEO DL button in the top XP toolbar.
+VIDEO DL observes media resources used by the current page and scans video/audio/source tags and browser resource entries for accessible HTTP(S) media URLs such as MP4, WebM, M3U8 and MPD.
+Detected URLs are handed to the browser's existing download-choice dialog, where Downloader 1 or Downloader 2 can be selected.
+This feature does not bypass DRM, encrypted media, login protections, or access controls. Blob URLs and protected streams may not expose a directly downloadable URL.
+The supplied Video Downloader APK was inspected for architecture clues: it contains Media3 extractors/DownloadHelper, a VideoDetectionTabViewModel and DownloadVideoDialog, but its obfuscated bytecode did not provide a safe basis for copying its proprietary implementation.

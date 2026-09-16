@@ -1,0 +1,4 @@
+Connectivity airplane indicator added.
+Offline: a small airplane is shown with its nose out of an XP-style hangar.
+Online: the airplane takes off from a runway and rises visually a few meters before repeating.
+The indicator uses Android network validation and updates automatically.

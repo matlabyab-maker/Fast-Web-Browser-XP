@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/action_save_fullpage_jpg" android:title="ذخیره تصویر کل صفحه (.jpg)" />
+    <item android:id="@+id/action_save_fullpage_pdf" android:title="ذخیره PDF کل صفحه (.pdf)" />
+    <item android:id="@+id/action_save_page_txt" android:title="ذخیره متن صفحه (.txt)" />
+    <item android:id="@+id/action_save_page_xml" android:title="ذخیره XML صفحه (.xml)" />
+</menu>

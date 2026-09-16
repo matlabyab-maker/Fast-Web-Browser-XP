@@ -1,0 +1,16 @@
+Fast Browser XP — Scroll Wheel + Desktop Mode
+
+1. A real mouse-wheel-like control was added to the top window bar.
+   - Drag the wheel up/down with a finger.
+   - Page movement is smooth.
+   - A small momentum effect is included.
+
+2. The outer toolbar ▲ and ▼ buttons now jump smoothly to the absolute top and absolute bottom of the current page.
+
+3. The ↺ button also returns smoothly to the top.
+
+4. A DESKTOP button was added to the top window bar.
+   - Tap DESKTOP to load pages with a Windows desktop Chrome user-agent.
+   - It changes to MOBILE; tap again to return to the normal Android WebView user-agent.
+
+The .git folder is not included. Keep the existing .git folder in MGit when replacing the project contents.

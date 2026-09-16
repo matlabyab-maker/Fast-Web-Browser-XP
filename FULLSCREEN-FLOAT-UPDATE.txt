@@ -1,0 +1,8 @@
+Fast Browser XP Plus - Fullscreen and FLOAT update
+
+- FULL button enters immersive fullscreen and hides Android status/navigation bars.
+- F11 also toggles fullscreen on compatible keyboards.
+- A floating WINDOW button appears over the page while fullscreen and exits back to browser window mode.
+- FLOAT button enters Android Picture-in-Picture mode where supported; the system can move the browser as a floating window.
+- Back exits fullscreen first, then normal browser navigation.
+- .git is intentionally excluded from the ZIP.

@@ -1,0 +1,9 @@
+Fast Browser XP - Upload + Outer Wheel Update
+
+- Added a visible UPLOAD button to the outer browser toolbar.
+- UPLOAD tries to activate a visible HTML file input on the current web page.
+- Existing WebView file chooser support remains enabled for sites such as ChatGPT.
+- Moved the four page controls from the floating in-page panel to the outer toolbar, preserving order:
+  ▲  ↺  ▼  —
+- ▲ scrolls up, ↺ returns to top, ▼ scrolls down, — hides browser chrome.
+- The in-page floating wheel panel was removed.

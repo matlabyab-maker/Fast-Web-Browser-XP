@@ -1,0 +1,7 @@
+Fast Browser XP - Split close + Radio player + low-kbps control
+- Each split pane has a close button.
+- Radio player in top toolbar: previous, play/pause, next, radio list.
+- Second radio list is separate from the main list and can use online Radio Browser sources.
+- KBPS WHEEL selects target 1..100 kbps.
+- Actual bitrate reduction requires a server-side transcoder; the browser sends {URL} and {KBPS} to a configurable transcoder URL template.
+- No public transcoding server is hard-coded because an uncontrolled third-party server may be unavailable or unsafe.

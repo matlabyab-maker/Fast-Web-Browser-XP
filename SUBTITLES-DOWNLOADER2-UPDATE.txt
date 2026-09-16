@@ -1,0 +1,17 @@
+Fast Browser XP Plus — Subtitles + Active Lights + Downloader 2
+
+SUBTITLES:
+- OpenSubtitles: real subtitle search source
+- SUBDL: real subtitle search/download source
+- Addic7ed: real TV/movie subtitle source
+- SUBS button searches using the current page title when possible.
+
+ACTIVE BUTTON LIGHTS:
+- Stateful active modes use a small blinking bright-orange square at the top-right of the button.
+- Applied to SELECT / CONTROL, CONTROL 2, DESKTOP mode, FULL screen and FLOAT when active.
+
+DOWNLOADER 2:
+- The supplied Quick Browser 1.0.30 APK was inspected for its download architecture and UI concepts.
+- Downloader 2 is implemented independently; no proprietary code was copied.
+- Download prompt asks for filename and lets the user choose Downloader 1 (Android system) or Downloader 2 (browser-owned).
+- Downloader 2 follows redirects, sends User-Agent/Cookie/Referer, shows progress, and saves to Android Downloads.

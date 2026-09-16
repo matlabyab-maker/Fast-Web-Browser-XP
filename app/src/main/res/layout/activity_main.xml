@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:background="#ECE9D8">
+
+    <LinearLayout
+        android:id="@+id/titleBar" android:layout_width="match_parent" android:layout_height="44dp"
+        android:orientation="horizontal" android:gravity="center_vertical" android:background="#3A6EA5">
+        <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"
+            android:gravity="center_vertical" android:paddingStart="10dp" android:text="@string/app_name"
+            android:textColor="#FFFFFF" android:textStyle="bold" android:textSize="17sp"/>
+        <FrameLayout android:layout_width="92dp" android:layout_height="36dp" android:layout_margin="4dp">
+            <TextView android:id="@+id/btnControl" android:layout_width="match_parent" android:layout_height="match_parent"
+                android:gravity="center" android:text="1 CONTROL" android:textColor="#FFFFFF" android:textStyle="bold" android:background="@drawable/xp_button"/>
+            <View android:id="@+id/selectIndicator" android:layout_width="10dp" android:layout_height="10dp"
+                android:layout_gravity="top|end" android:layout_margin="3dp" android:background="#87CEEB" android:visibility="gone"/>
+        </FrameLayout>
+        <FrameLayout android:layout_width="92dp" android:layout_height="36dp" android:layout_margin="4dp">
+            <TextView android:id="@+id/btnControl2" android:layout_width="match_parent" android:layout_height="match_parent"
+                android:gravity="center" android:text="2 CONTROL 2" android:textSize="10sp" android:textColor="#FFFFFF" android:textStyle="bold" android:background="@drawable/xp_button"/>
+            <View android:id="@+id/control2Indicator" android:layout_width="10dp" android:layout_height="10dp"
+                android:layout_gravity="top|end" android:layout_margin="3dp" android:background="#87CEEB" android:visibility="gone"/>
+        </FrameLayout>
+    </LinearLayout>
+
+    <!-- Compact browser controls: navigation stays outside the drop-down groups. -->
+    <HorizontalScrollView android:layout_width="match_parent" android:layout_height="44dp"
+        android:background="@drawable/xp_bar" android:scrollbars="none">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="match_parent" android:orientation="horizontal" android:gravity="center_vertical">
+            <TextView android:id="@+id/btnBack" android:layout_width="58dp" android:layout_height="36dp" android:layout_margin="3dp" android:gravity="center" android:text="←" android:textSize="22sp" android:textColor="#FFFFFF" android:background="@drawable/xp_button"/>
+            <TextView android:id="@+id/btnForward" android:layout_width="58dp" android:layout_height="36dp" android:layout_margin="3dp" android:gravity="center" android:text="→" android:textSize="22sp" android:textColor="#FFFFFF" android:background="@drawable/xp_button"/>
+            <TextView android:id="@+id/btnReload" android:layout_width="58dp" android:layout_height="36dp" android:layout_margin="3dp" android:gravity="center" android:text="↻" android:textSize="22sp" android:textColor="#FFFFFF" android:background="@drawable/xp_button"/>
+            <TextView android:id="@+id/btnStopwatch" android:layout_width="64dp" android:layout_height="36dp" android:layout_margin="3dp" android:gravity="center" android:text="⏱ 00:00" android:textSize="10sp" android:textStyle="bold" android:textColor="#FFFFFF" android:background="@drawable/xp_button" android:contentDescription="کرنومتر؛ لمس برای شروع/توقف، نگه داشتن برای صفر کردن"/>
+            <TextView android:id="@+id/btnGoogle" android:layout_width="78dp" android:layout_height="36dp" android:layout_margin="3dp" android:gravity="center" android:text="GOOGLE" android:textSize="10sp" android:textStyle="bold" android:textColor="#FFFFFF" android:background="@drawable/xp_button" android:contentDescription="Google؛ با نگه داشتن، موتورهای جستجو"/>
+            <TextView android:id="@+id/btnEnterTop" android:layout_width="62dp" android:layout_height="36dp" android:layout_margin="3dp" android:gravity="center" android:text="ENTER" android:textSize="10sp" android:textColor="#FFFFFF" android:background="@drawable/xp_button"/>
+            <TextView android:id="@+id/btnHome" android:layout_width="62dp" android:layout_height="36dp" android:layout_margin="3dp" android:gravity="center" android:text="HOME" android:textSize="10sp" android:textColor="#FFFFFF" android:background="@drawable/xp_button"/>
+            <TextView android:id="@+id/btnChatGPT" android:layout_width="70dp" android:layout_height="36dp" android:layout_margin="3dp" android:gravity="center" android:text="+ AI" android:textSize="10sp" android:textColor="#FFFFFF" android:background="@drawable/xp_button"/>
+            <TextView android:id="@+id/btnToken" android:layout_width="76dp" android:layout_height="36dp" android:layout_margin="3dp" android:gravity="center" android:text="TOKEN" android:textSize="10sp" android:textColor="#FFFFFF" android:background="@drawable/xp_button"/>
+            <TextView android:id="@+id/btnRepo" android:layout_width="76dp" android:layout_height="36dp" android:layout_margin="3dp" android:gravity="center" android:text="REPO" android:textSize="10sp" android:textColor="#FFFFFF" android:background="@drawable/xp_button"/>
+            <TextView android:id="@+id/btnHistory" android:layout_width="68dp" android:layout_height="36dp" android:layout_margin="3dp" android:gravity="center" android:text="HIST" android:textSize="10sp" android:textColor="#FFFFFF" android:background="@drawable/xp_button"/>
+            <TextView android:id="@+id/btnBookmark" android:layout_width="56dp" android:layout_height="36dp" android:layout_margin="3dp" android:gravity="center" android:text="★" android:textSize="22sp" android:textColor="#FFFFFF" android:background="@drawable/xp_button"/>
+            <TextView android:id="@+id/btnLinksGroup" android:layout_width="78dp" android:layout_height="36dp" android:layout_margin="3dp" android:gravity="center" android:text="LINKS ▼" android:textSize="10sp" android:textStyle="bold" android:textColor="#FFFFFF" android:background="@drawable/xp_button"/>
+            <TextView android:id="@+id/btnToolsGroup" android:layout_width="78dp" android:layout_height="36dp" android:layout_margin="3dp" android:gravity="center" android:text="TOOLS ▼" android:textSize="10sp" android:textStyle="bold" android:textColor="#FFFFFF" android:background="@drawable/xp_button"/>
+            <TextView android:id="@+id/btnMediaGroup" android:layout_width="78dp" android:layout_height="36dp" android:layout_margin="3dp" android:gravity="center" android:text="MEDIA ▼" android:textSize="10sp" android:textStyle="bold" android:textColor="#FFFFFF" android:background="@drawable/xp_button"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout android:id="@+id/linksPanel" android:layout_width="match_parent" android:layout_height="44dp" android:orientation="horizontal" android:gravity="center_vertical" android:background="@drawable/xp_bar" android:visibility="gone">
+        <TextView android:id="@+id/btnLinksLabel" android:layout_width="58dp" android:layout_height="36dp" android:layout_margin="3dp" android:gravity="center" android:text="LINKS" android:textSize="9sp" android:textColor="#FFFFFF" android:background="@drawable/xp_button"/>
+        <TextView android:id="@+id/btnApps" android:layout_width="66dp" android:layout_height="36dp" android:layout_margin="3dp" android:gravity="center" android:text="APPS" android:textSize="9sp" android:textColor="#FFFFFF" android:background="@drawable/xp_button"/>
+        <TextView android:id="@+id/btnSubs" android:layout_width="66dp" android:layout_height="36dp" android:layout_margin="3dp" android:gravity="center" android:text="SUBS" android:textSize="9sp" android:textColor="#FFFFFF" android:background="@drawable/xp_button"/>
+        <TextView android:id="@+id/btnSocial" android:layout_width="72dp" android:layout_height="36dp" android:layout_margin="3dp" android:gravity="center" android:text="SOCIAL" android:textSize="9sp" android:textColor="#FFFFFF" android:background="@drawable/xp_button"/>
+    </LinearLayout>
+
+    <HorizontalScrollView android:id="@+id/toolsPanel" android:layout_width="match_parent" android:layout_height="44dp" android:background="@drawable/xp_bar" android:scrollbars="none" android:visibility="gone">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="match_parent" android:orientation="horizontal" android:gravity="center_vertical">
+            <TextView android:id="@+id/btnNewTab" android:layout_width="82dp" android:layout_height="36dp" android:layout_margin="3dp" android:gravity="center" android:text="+ NEW TAB" android:textSize="10sp" android:textColor="#FFFFFF" android:background="@drawable/xp_button"/>
+            <TextView android:id="@+id/btnCloseAllTabs" android:layout_width="86dp" android:layout_height="36dp" android:layout_margin="3dp" android:gravity="center" android:text="× CLOSE ALL" android:textSize="10sp" android:textStyle="bold" android:textColor="#FFFFFF" android:background="@drawable/xp_button"/>
+            <TextView android:id="@+id/btnSelect" android:layout_width="70dp" android:layout_height="36dp" android:layout_margin="3dp" android:gravity="center" android:text="SELECT" android:textSize="11sp" android:textColor="#FFFFFF" android:background="@drawable/xp_button"/>
+            <TextView android:id="@+id/btnWheel" android:layout_width="70dp" android:layout_height="36dp" android:layout_margin="3dp" android:gravity="center" android:text="◉ WHEEL" android:textSize="11sp" android:textColor="#FFFFFF" android:background="@drawable/xp_button"/>
+            <TextView android:id="@+id/btnScreenshot" android:layout_width="70dp" android:layout_height="36dp" android:layout_margin="3dp" android:gravity="center" android:text="SHOT" android:textSize="11sp" android:textColor="#FFFFFF" android:background="@drawable/xp_button"/>
+            <TextView android:id="@+id/btnFullscreen" android:layout_width="64dp" android:layout_height="36dp" android:layout_margin="3dp" android:gravity="center" android:text="FULL" android:textSize="10sp" android:textStyle="bold" android:textColor="#FFFFFF" android:background="@drawable/xp_button"/>
+            <TextView android:id="@+id/btnFloat" android:layout_width="64dp" android:layout_height="36dp" android:layout_margin="3dp" android:gravity="center" android:text="FLOAT" android:textSize="10sp" android:textStyle="bold" android:textColor="#FFFFFF" android:background="@drawable/xp_button"/>
+            <TextView android:id="@+id/btnUpload" android:layout_width="72dp" android:layout_height="36dp" android:layout_margin="3dp" android:gravity="center" android:text="UPLOAD" android:textSize="10sp" android:textColor="#FFFFFF" android:background="@drawable/xp_button"/>
+            <TextView android:id="@+id/btnSavePage" android:layout_width="70dp" android:layout_height="36dp" android:layout_margin="3dp" android:gravity="center" android:text="SAVE" android:textSize="11sp" android:textColor="#FFFFFF" android:background="@drawable/xp_button"/>
+            <TextView android:id="@+id/btnEnterBottom" android:layout_width="62dp" android:layout_height="36dp" android:layout_margin="3dp" android:gravity="center" android:text="ENTER" android:textSize="10sp" android:textStyle="bold" android:textColor="#FFFFFF" android:background="@drawable/xp_button"/>
+            <TextView android:id="@+id/btnHideAll" android:layout_width="44dp" android:layout_height="36dp" android:layout_margin="3dp" android:gravity="center" android:text="—" android:textSize="16sp" android:textColor="#FFFFFF" android:background="@drawable/xp_button"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <HorizontalScrollView android:id="@+id/mediaPanel" android:layout_width="match_parent" android:layout_height="44dp" android:background="@drawable/xp_bar" android:scrollbars="none" android:visibility="gone">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="match_parent" android:orientation="horizontal" android:gravity="center_vertical">
+            <TextView android:id="@+id/btnVideoDownload" android:layout_width="92dp" android:layout_height="36dp" android:layout_margin="3dp" android:gravity="center" android:text="VIDEO DL" android:textSize="10sp" android:textStyle="bold" android:textColor="#FFFFFF" android:background="@drawable/xp_button"/>
+            <TextView android:id="@+id/btnDownloads" android:layout_width="82dp" android:layout_height="36dp" android:layout_margin="3dp" android:gravity="center" android:text="DOWNLOADS" android:textSize="9sp" android:textColor="#FFFFFF" android:background="@drawable/xp_button"/>
+            <TextView android:id="@+id/btnRadioPrev" android:layout_width="54dp" android:layout_height="36dp" android:layout_margin="3dp" android:gravity="center" android:text="◀" android:textSize="18sp" android:textColor="#FFFFFF" android:background="@drawable/xp_button"/>
+            <TextView android:id="@+id/btnRadioPlay" android:layout_width="54dp" android:layout_height="36dp" android:layout_margin="3dp" android:gravity="center" android:text="▶" android:textSize="18sp" android:textColor="#FFFFFF" android:background="@drawable/xp_button"/>
+            <TextView android:id="@+id/btnRadioNext" android:layout_width="54dp" android:layout_height="36dp" android:layout_margin="3dp" android:gravity="center" android:text="▶" android:textSize="18sp" android:textColor="#FFFFFF" android:background="@drawable/xp_button"/>
+            <TextView android:id="@+id/radioName" android:layout_width="230dp" android:layout_height="36dp" android:gravity="center_vertical" android:paddingStart="8dp" android:text="Radio" android:textSize="10sp" android:textColor="#FFFFFF"/>
+            <TextView android:id="@+id/btnRadioList" android:layout_width="62dp" android:layout_height="36dp" android:layout_margin="3dp" android:gravity="center" android:text="RADIOS" android:textSize="9sp" android:textColor="#FFFFFF" android:background="@drawable/xp_button"/>
+            <TextView android:id="@+id/btnRadioKbps" android:layout_width="72dp" android:layout_height="36dp" android:layout_margin="3dp" android:gravity="center" android:text="KBPS WHEEL" android:textSize="8sp" android:textColor="#FFFFFF" android:background="@drawable/xp_button"/>
+            <TextView android:id="@+id/btnRadioServer" android:layout_width="66dp" android:layout_height="36dp" android:layout_margin="3dp" android:gravity="center" android:text="SERVER" android:textSize="9sp" android:textColor="#FFFFFF" android:background="@drawable/xp_button"/>
+            <TextView android:id="@+id/btnSplit" android:layout_width="70dp" android:layout_height="36dp" android:layout_margin="3dp" android:gravity="center" android:text="SPLIT" android:textSize="10sp" android:textStyle="bold" android:textColor="#FFFFFF" android:background="@drawable/xp_button"/>
+            <TextView android:id="@+id/btnWheelUp" android:layout_width="44dp" android:layout_height="36dp" android:layout_margin="3dp" android:gravity="center" android:text="▲" android:textSize="18sp" android:textColor="#FFFFFF" android:background="@drawable/xp_button"/>
+            <TextView android:id="@+id/btnWheelReset" android:layout_width="44dp" android:layout_height="36dp" android:layout_margin="3dp" android:gravity="center" android:text="↺" android:textSize="20sp" android:textColor="#FFFFFF" android:background="@drawable/xp_button"/>
+            <TextView android:id="@+id/btnWheelDown" android:layout_width="44dp" android:layout_height="36dp" android:layout_margin="3dp" android:gravity="center" android:text="▼" android:textSize="18sp" android:textColor="#FFFFFF" android:background="@drawable/xp_button"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <HorizontalScrollView android:id="@+id/tabScroller" android:layout_width="match_parent" android:layout_height="40dp" android:fillViewport="false"
+        android:background="#245A8D" android:scrollbars="none">
+        <LinearLayout android:id="@+id/tabBar" android:layout_width="wrap_content" android:layout_height="match_parent" android:orientation="horizontal" android:gravity="center_vertical"/>
+    </HorizontalScrollView>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="48dp" android:orientation="horizontal"
+        android:background="#D4D0C8" android:padding="4dp" android:gravity="center_vertical">
+        <EditText android:id="@+id/addressBar" android:layout_width="0dp" android:layout_height="40dp" android:layout_weight="1"
+            android:hint="@string/address_hint" android:singleLine="true" android:inputType="textUri" android:imeOptions="actionGo"
+            android:background="#FFFFFF" android:paddingStart="8dp" android:paddingEnd="8dp"/>
+        <TextView android:id="@+id/btnGo" android:layout_width="48dp" android:layout_height="40dp" android:layout_marginStart="4dp"
+            android:gravity="center" android:text="GO" android:textStyle="bold" android:textColor="#FFFFFF" android:background="@drawable/xp_button"/>
+    </LinearLayout>
+
+
+    <FrameLayout android:id="@+id/webArea" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <WebView android:id="@+id/webView" android:layout_width="match_parent" android:layout_height="match_parent"/>
+
+        <com.fastbrowser.xp.ConnectivityAirplaneView
+            android:id="@+id/connectivityAirplane"
+            android:layout_width="150dp" android:layout_height="82dp"
+            android:layout_gravity="center|bottom" android:layout_marginBottom="10dp"
+            android:alpha="0.94"
+            android:elevation="3dp"
+            android:contentDescription="وضعیت اتصال اینترنت"/>
+
+        <TextView android:id="@+id/btnShowAll" android:layout_width="44dp" android:layout_height="44dp"
+            android:layout_gravity="end|bottom" android:layout_marginEnd="5dp" android:layout_marginBottom="5dp"
+            android:gravity="center" android:text="☰" android:textSize="20sp" android:textColor="#FFFFFF"
+            android:background="@drawable/xp_button" android:visibility="gone"/>
+
+        <com.fastbrowser.xp.MousePointerView
+            android:id="@+id/mousePointer" android:layout_width="match_parent" android:layout_height="match_parent"
+            android:clickable="false" android:focusable="false" android:importantForAccessibility="no"/>
+
+        <com.fastbrowser.xp.MousePadView
+            android:id="@+id/mousePad" android:layout_width="118dp" android:layout_height="118dp"
+            android:layout_gravity="end|bottom" android:layout_marginEnd="12dp" android:layout_marginBottom="12dp"
+            android:contentDescription="کنترل موس"/>
+
+        <TextView android:id="@+id/btnExitFullscreen" android:layout_width="58dp" android:layout_height="58dp"
+            android:layout_gravity="start|top" android:layout_marginStart="12dp" android:layout_marginTop="12dp"
+            android:gravity="center" android:text="WINDOW" android:textSize="9sp" android:textStyle="bold"
+            android:textColor="#FFFFFF" android:background="@drawable/xp_button"
+            android:elevation="8dp" android:visibility="gone" android:contentDescription="بازگشت از تمام صفحه"/>
+    </FrameLayout>
+
+    <LinearLayout android:id="@+id/newsTicker" android:layout_width="match_parent" android:layout_height="36dp"
+        android:orientation="horizontal" android:gravity="center_vertical" android:background="#245A8D" android:padding="2dp">
+        <TextView android:id="@+id/newsText" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"
+            android:gravity="center_vertical" android:paddingStart="8dp" android:paddingEnd="8dp" android:text="NEWS: loading…"
+            android:textColor="#FFFFFF" android:textSize="12sp" android:singleLine="true" android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever" android:focusable="true" android:focusableInTouchMode="true"/>
+        <TextView android:id="@+id/btnNewsSource" android:layout_width="58dp" android:layout_height="30dp" android:gravity="center"
+            android:text="NEWS" android:textSize="9sp" android:textColor="#FFFFFF" android:background="@drawable/xp_button"/>
+        <TextView android:id="@+id/btnNewsTranslate" android:layout_width="58dp" android:layout_height="30dp" android:gravity="center"
+            android:text="→FA" android:textSize="10sp" android:textColor="#FFFFFF" android:background="@drawable/xp_button"/>
+        <TextView android:id="@+id/btnHideNews" android:layout_width="42dp" android:layout_height="30dp" android:gravity="center"
+            android:text="—" android:textSize="16sp" android:textColor="#FFFFFF" android:background="@drawable/xp_button"/>
+    </LinearLayout>
+
+    <HorizontalScrollView android:layout_width="match_parent" android:layout_height="46dp" android:fillViewport="false"
+        android:background="@drawable/xp_bar" android:scrollbars="none">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="match_parent" android:orientation="horizontal" android:gravity="center_vertical">
+            <TextView android:id="@+id/btnNewTab" android:layout_width="82dp" android:layout_height="38dp" android:layout_margin="3dp" android:gravity="center" android:text="+ NEW TAB" android:textSize="10sp" android:textColor="#FFFFFF" android:background="@drawable/xp_button"/>
+            <TextView android:id="@+id/btnCloseAllTabs" android:layout_width="86dp" android:layout_height="38dp" android:layout_margin="3dp" android:gravity="center" android:text="× CLOSE ALL" android:textSize="10sp" android:textStyle="bold" android:textColor="#FFFFFF" android:background="@drawable/xp_button"/>
+            <TextView android:id="@+id/btnEnterBottom" android:layout_width="62dp" android:layout_height="38dp" android:layout_margin="3dp" android:gravity="center" android:text="ENTER" android:textSize="10sp" android:textStyle="bold" android:textColor="#FFFFFF" android:background="@drawable/xp_button"/>
+            <TextView android:id="@+id/btnSelect" android:layout_width="70dp" android:layout_height="38dp" android:layout_margin="3dp" android:gravity="center" android:text="SELECT" android:textSize="11sp" android:textColor="#FFFFFF" android:background="@drawable/xp_button"/>
+            <TextView android:id="@+id/btnWheel" android:layout_width="70dp" android:layout_height="38dp" android:layout_margin="3dp" android:gravity="center" android:text="◉ WHEEL" android:textSize="11sp" android:textColor="#FFFFFF" android:background="@drawable/xp_button"/>
+            <TextView android:id="@+id/btnScreenshot" android:layout_width="70dp" android:layout_height="38dp" android:layout_margin="3dp" android:gravity="center" android:text="SHOT" android:textSize="11sp" android:textColor="#FFFFFF" android:background="@drawable/xp_button"/>
+            <TextView android:id="@+id/btnDownloads" android:layout_width="70dp" android:layout_height="38dp" android:layout_margin="3dp" android:gravity="center" android:text="DOWNLOADS" android:textSize="9sp" android:textColor="#FFFFFF" android:background="@drawable/xp_button"/>
+            <TextView android:id="@+id/btnSavePage" android:layout_width="70dp" android:layout_height="38dp" android:layout_margin="3dp" android:gravity="center" android:text="SAVE" android:textSize="11sp" android:textColor="#FFFFFF" android:background="@drawable/xp_button"/>
+            <TextView android:id="@+id/btnFullscreen" android:layout_width="64dp" android:layout_height="38dp" android:layout_margin="3dp" android:gravity="center" android:text="FULL" android:textSize="10sp" android:textStyle="bold" android:textColor="#FFFFFF" android:background="@drawable/xp_button"/>
+            <TextView android:id="@+id/btnFloat" android:layout_width="64dp" android:layout_height="38dp" android:layout_margin="3dp" android:gravity="center" android:text="FLOAT" android:textSize="10sp" android:textStyle="bold" android:textColor="#FFFFFF" android:background="@drawable/xp_button"/>
+            <TextView android:id="@+id/btnUpload" android:layout_width="72dp" android:layout_height="38dp" android:layout_margin="3dp" android:gravity="center" android:text="UPLOAD" android:textSize="10sp" android:textColor="#FFFFFF" android:background="@drawable/xp_button"/>
+            <TextView android:id="@+id/btnWheelUp" android:layout_width="44dp" android:layout_height="38dp" android:layout_margin="3dp" android:gravity="center" android:text="▲" android:textSize="18sp" android:textColor="#FFFFFF" android:background="@drawable/xp_button"/>
+            <TextView android:id="@+id/btnWheelReset" android:layout_width="44dp" android:layout_height="38dp" android:layout_margin="3dp" android:gravity="center" android:text="↺" android:textSize="20sp" android:textColor="#FFFFFF" android:background="@drawable/xp_button"/>
+            <TextView android:id="@+id/btnWheelDown" android:layout_width="44dp" android:layout_height="38dp" android:layout_margin="3dp" android:gravity="center" android:text="▼" android:textSize="18sp" android:textColor="#FFFFFF" android:background="@drawable/xp_button"/>
+            <TextView android:id="@+id/btnHideAll" android:layout_width="44dp" android:layout_height="38dp" android:layout_margin="3dp" android:gravity="center" android:text="—" android:textSize="16sp" android:textColor="#FFFFFF" android:background="@drawable/xp_button"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+</LinearLayout>

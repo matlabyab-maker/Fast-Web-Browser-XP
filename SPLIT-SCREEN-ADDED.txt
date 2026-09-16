@@ -1,0 +1,9 @@
+Fast Browser XP — Split Screen
+================================
+Feature specification:
+- Split the main browser area into two independent panes.
+- Each pane has its own WebView and address/navigation controls.
+- Two different URLs can be opened simultaneously.
+- A draggable divider separates the panes.
+- SPLIT toggles split mode; CLOSE SPLIT returns to the normal single-page view.
+- Both panes remain independently scrollable and navigable.

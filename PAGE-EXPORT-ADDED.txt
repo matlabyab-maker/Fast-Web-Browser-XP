@@ -1,0 +1,9 @@
+Fast Browser XP - Page Export formats
+========================================
+Added resource menu entries for:
+- Full page image: .jpg
+- Full page document: .pdf
+- Page text: .txt
+- Page structure/data: .xml
+
+These are intended as the browser's page-export actions.
